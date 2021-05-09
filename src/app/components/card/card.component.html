@@ -1,0 +1,32 @@
+
+
+
+
+    
+        <div class="card-columns m-5 animated fadeIn">
+
+
+            <div (click)="verPokemon( item )"  *ngFor="let item of items" class="col m-3 card puntero" style="width: 8rem;">
+              <img class="card-img-top" [src]="item.image" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">{{item.name}}</h5>
+                  <p class="card-text">
+                      <span  class="badge badge-pill badge-primary">
+                          {{item.name}}
+                      </span>
+                  </p>
+              </div>
+          </div>
+        
+        </div>
+
+
+
+    
+   
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+
+<div class="row">
+    <div class="col">
+        <form #f="ngForm" (keyup.enter)="buscar(f)" novalidate>
+            <input name="termino" ngModel type="text"  ng-pattern="/^([a-zA-Z0-9]){1,16}$/" ng-trim="false"  class="form-control" placeholder="Buscar Pokémon..." autocomplete="off">
+
+        </form>
+       
+    </div>
+</div>
+
+<app-card  [items]="data" ></app-card>
+
+
+<label class="image-upload-container btn btn-bwm">
+    <span>Select Image</span>
+    <input #imageInput
+           type="file"
+           accept="image/*"
+           (change)="processFile(imageInput)">
+  </label>
